@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -7,7 +8,7 @@ module.exports = {
     filename: 'backend-bundle.js',
     path: path.resolve(__dirname, 'build')
   },
-  devtool: 'inline-source-map',   //compilation speed vs. quality tradeoff
+  // devtool: 'cheap-eval-source-map',
   resolve: {
     extensions: ['.js'],
   },
@@ -25,18 +26,5 @@ module.exports = {
       },
     ],
   },
-  devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
-    compress: true,
-    port: 2500,
-    stats: 'errors-only',
-    open: false,
-    hot: true,
-    historyApiFallback: true
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
-  ]
 
 }

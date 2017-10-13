@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node build/backend.js & webpack -wd",
     "babel-dev": "nodemon server/index.js --exec babel-node",
-    "webpack-dev": "nodemon build/backend-bundle.js & webpack -wd",
-    "webpack-hot": "nodemon build/backend-bundle.js & webpack-dev-server"
+    "webpack-dev": "nodemon build/backend-bundle.js & webpack -wd"
   },
   "keywords": [],
   "author": "",

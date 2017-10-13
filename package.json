@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "babel": "babel server --out-dir public --watch",
-    "start": "nodemon public/index.js",
+    "start": "nodemon build/backend.js",
     "webpack": "webpack -wd"
   },
   "keywords": [],

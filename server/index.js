@@ -15,5 +15,9 @@
 //   console.log(stats);
 // });
 
+
+// console.log(app)
+
+
+
 import app from './app'
-console.log(app)

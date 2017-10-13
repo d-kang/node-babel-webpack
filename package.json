@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "babel": "babel server --out-dir public --watch",
-    "start": "nodemon build/backend.js",
-    "webpack": "webpack -wd"
+    "start": "node build/backend.js & webpack -wd",
+    "babel-dev": "nodemon server/index.js --exec babel-node",
+    "webpack-dev": "nodemon build/backend-bundle.js & webpack -wd",
+    "webpack-hot": "nodemon build/backend-bundle.js & webpack-dev-server"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "webpack": "^3.7.1"
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.9.1"
   }
 }

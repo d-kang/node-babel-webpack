@@ -1,8 +1,13 @@
 const webpack = require('webpack');
 const path = require('path');
+const nodeExternals = require('webpack-node-externals');
+const fs = require('fs');
+
+
 
 module.exports = {
   target: 'node',
+  externals: [nodeExternals()],
   entry: ['babel-polyfill', './server/index.js'],
   output: {
     filename: 'backend-bundle.js',

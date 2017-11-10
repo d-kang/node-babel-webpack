@@ -4,7 +4,6 @@ const nodeExternals = require('webpack-node-externals');
 const fs = require('fs');
 
 
-
 module.exports = {
   target: 'node',
   externals: [nodeExternals()],
@@ -31,5 +30,4 @@ module.exports = {
       },
     ],
   },
-
 }

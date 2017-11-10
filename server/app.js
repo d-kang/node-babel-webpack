@@ -13,7 +13,7 @@ app.use(morgan('dev'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
-  res.send('Hello World Test!!!!~')
+  res.send('Hello World Test!!!~')
 })
 
 // app.use('/', 'router');
